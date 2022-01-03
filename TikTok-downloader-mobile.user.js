@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TikTok mobile download addon
-// @namespace    https://github.com/Knuspie/TikTok-download-addon
+// @namespace    https://github.com/Knuspie/TikTok-mobile-downloader
 // @version      1.7
 // @description  An addon which allows you to download your tiktoks easelly
 // @author       Knuspie
@@ -32,7 +32,7 @@ function main() {
   function checkSideBar() {
     if(document.querySelector(".side-bar-mobile-container") != null) {
       if(document.getElementById("credit") == null) {
-        document.querySelector("div.bottom-wrapper").getElementsByTagName("div")[1].insertAdjacentHTML('beforeend', '<span style="display: block;" id="credit"><a class="item-sub-column" target="_blank" href="https://github.com/Knuspie/TikTok-mobile-addon.git"><h5>Addon</h5></a></span>');
+        document.querySelector("div.bottom-wrapper").getElementsByTagName("div")[1].insertAdjacentHTML('beforeend', '<span style="display: block;" id="credit"><a class="item-sub-column" target="_blank" href="https://github.com/Knuspie/TikTok-mobile-downloader"><h5>Addon</h5></a></span>');
       }
     }
   }
